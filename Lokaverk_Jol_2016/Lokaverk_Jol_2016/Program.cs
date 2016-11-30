@@ -24,7 +24,7 @@ namespace Lokaverk_Jol_2016
                     world.PopulateItems();
 
                     user.text_intro();
-                    user.User_Name = Console.ReadLine();
+                    user.User_Name = Console.ReadLine().ToLower();
                     user.text_runes();
             do
             {
