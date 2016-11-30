@@ -33,7 +33,7 @@ namespace Lokaverk_Jol_2016
         public const int MONSTER_ID_SNAKE = 2;
         public const int MONSTER_ID_GIANT_SPIDER = 3;
         
-        static World()
+        public World()
         {
             
             PopulateItems();      
@@ -41,7 +41,7 @@ namespace Lokaverk_Jol_2016
               
         }
         
-        private static void PopulateItems()
+        public void PopulateItems()
         {
             new Weapon(ITEM_ID_RUSTY_SWORD, "Rusty sword", "Rusty swords", 0, 5, 5);
             new Weapon(ITEM_ID_CLUB, "Club", "Clubs", 3, 10, 10);
