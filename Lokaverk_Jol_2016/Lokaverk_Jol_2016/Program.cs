@@ -26,6 +26,8 @@ namespace Lokaverk_Jol_2016
             Shop buy = new Shop();
             Intro_and_shit text = new Intro_and_shit();
 
+            text.the_end();
+            Console.ReadKey();
             text.intro();
             user.text_intro();
             user.User_Name = Console.ReadLine();
@@ -284,6 +286,7 @@ namespace Lokaverk_Jol_2016
 
             } while (!five.Boss_5);
 
+            text.the_end();
             Console.ReadKey();
         }
     }

@@ -14,7 +14,7 @@ namespace Lokaverk_Jol_2016
         Menu menu = new Menu();
         bool[] see = new bool[9];
         int[] enemy = new int[9];
-        int floor = 1;
+        int floor = 5;
         int back = 0;
         public bool Boss_5 = false;
         public bool battle = false;
@@ -300,12 +300,12 @@ namespace Lokaverk_Jol_2016
                     if (location <= 6)
                     {
                         location = location + 3;
-                        Console.WriteLine("Moving North");
+                        Console.WriteLine("\r\nMoving North");
                     }
                     else
                     {
                         Console.ForegroundColor = ConsoleColor.Red;
-                        Console.WriteLine("A rat hole, it is to small");
+                        Console.WriteLine("\r\nA rat hole, it is to small");
                     }
                     break;
 
@@ -331,7 +331,7 @@ namespace Lokaverk_Jol_2016
                     else
                     {
                         Console.ForegroundColor = ConsoleColor.Red;
-                        Console.WriteLine("A very fine looking wall");
+                        Console.WriteLine("\r\nA very fine looking wall");
                     }
                     break;
 
@@ -344,7 +344,7 @@ namespace Lokaverk_Jol_2016
                     else
                     {
                         Console.ForegroundColor = ConsoleColor.Red;
-                        Console.WriteLine("A picture of a whale, oh no that is your mom");
+                        Console.WriteLine("\r\nA picture of a whale, oh no that is your mom");
                     }
                     break;
                 case "menu":
@@ -386,7 +386,7 @@ namespace Lokaverk_Jol_2016
         {
             Console.ForegroundColor = ConsoleColor.Green;
             Console.WriteLine("\r\nYou look around the drak room and see a door to the north, south,");
-            Console.WriteLine("Floor 1 Room 1 : no one here");
+            Console.WriteLine("Floor "+floor+" Room 1 : no one here");
 
         }
     }//class
